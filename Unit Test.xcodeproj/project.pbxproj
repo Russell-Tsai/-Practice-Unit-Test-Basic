@@ -13,6 +13,7 @@
 		8EF165671FFC72A700B0BD0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF165661FFC72A700B0BD0D /* Assets.xcassets */; };
 		8EF1656A1FFC72A700B0BD0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF165681FFC72A700B0BD0D /* LaunchScreen.storyboard */; };
 		8EF165751FFC72A700B0BD0D /* Unit_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF165741FFC72A700B0BD0D /* Unit_TestTests.swift */; };
+		8EF165811FFC7BF000B0BD0D /* CaculateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF165801FFC7BF000B0BD0D /* CaculateModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8EF165701FFC72A700B0BD0D /* Unit TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF165741FFC72A700B0BD0D /* Unit_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit_TestTests.swift; sourceTree = "<group>"; };
 		8EF165761FFC72A700B0BD0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EF165801FFC7BF000B0BD0D /* CaculateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculateModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +79,10 @@
 		8EF1655E1FFC72A700B0BD0D /* Unit Test */ = {
 			isa = PBXGroup;
 			children = (
-				8EF1655F1FFC72A700B0BD0D /* AppDelegate.swift */,
+				8EF165801FFC7BF000B0BD0D /* CaculateModel.swift */,
 				8EF165611FFC72A700B0BD0D /* ViewController.swift */,
 				8EF165631FFC72A700B0BD0D /* Main.storyboard */,
-				8EF165661FFC72A700B0BD0D /* Assets.xcassets */,
-				8EF165681FFC72A700B0BD0D /* LaunchScreen.storyboard */,
-				8EF1656B1FFC72A700B0BD0D /* Info.plist */,
+				8EF1657F1FFC7A3E00B0BD0D /* Supporting Files */,
 			);
 			path = "Unit Test";
 			sourceTree = "<group>";
@@ -94,6 +94,17 @@
 				8EF165761FFC72A700B0BD0D /* Info.plist */,
 			);
 			path = "Unit TestTests";
+			sourceTree = "<group>";
+		};
+		8EF1657F1FFC7A3E00B0BD0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EF165661FFC72A700B0BD0D /* Assets.xcassets */,
+				8EF1655F1FFC72A700B0BD0D /* AppDelegate.swift */,
+				8EF165681FFC72A700B0BD0D /* LaunchScreen.storyboard */,
+				8EF1656B1FFC72A700B0BD0D /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EF165621FFC72A700B0BD0D /* ViewController.swift in Sources */,
+				8EF165811FFC7BF000B0BD0D /* CaculateModel.swift in Sources */,
 				8EF165601FFC72A700B0BD0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

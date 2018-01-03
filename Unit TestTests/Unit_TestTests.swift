@@ -11,14 +11,20 @@ import XCTest
 
 class Unit_TestTests: XCTestCase {
     
+    var theCalculate : CalculateModel!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        theCalculate = CalculateModel(sliderA: 10, sliderB: 5)
+
     }
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        
+        theCalculate = nil
     }
     
     func testExample() {
@@ -31,6 +37,11 @@ class Unit_TestTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testReault(){
+        //確認模擬計算是否吻合預測數值
+        XCTAssertEqual(theCalculate.getNumber(), 15)
     }
     
 }

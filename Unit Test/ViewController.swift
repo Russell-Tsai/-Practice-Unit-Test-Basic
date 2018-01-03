@@ -10,16 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var sliderA: UISlider!
+    @IBOutlet weak var sliderB: UISlider!
+    @IBOutlet weak var resultTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
+    
+    @IBAction func sliderChange(_ sender: Any) {
+        let myCalculate = CalculateModel(sliderA: Int(sliderA.value), sliderB: Int(sliderB.value))
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        resultTextField.text = String(myCalculate.getNumber())
     }
-
-
+    
 }
 
